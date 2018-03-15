@@ -1,0 +1,64 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+	
+		int age;
+		String name;
+		Animal george, fred, sam;
+		
+		
+		age = 7;
+		name = "George";
+		george = new Animal();
+	
+		george.type = "Lizard";
+		george.color = "Green";
+		george.feet = 4;
+		george.canfly = false;
+		george.canclimbwalls = true;
+		george.message = "Squee";
+		
+		george.speak();
+		
+		
+		//fred
+		fred = new Animal();
+		fred.type = "Dog";
+		fred.color = "Brown";
+		fred.feet = 4;
+		fred.canfly = false;
+		fred.canclimbwalls = false;
+		fred.message = "Ruff";
+		fred.canrun = true;
+		
+		fred.speak();
+		
+		//Sam
+		sam = new Animal();
+		sam.type = "Bird";
+		sam.color = "Blue";
+		sam.feet = 2;
+		sam.canfly = true;
+		sam.message = "CHIRP";
+	    sam.canrun = false;
+		
+		sam.speak();
+	}
+
+}
+
+class Animal{
+	//Animal Class Functions
+	String type;
+	String color;
+	int feet;
+	boolean canfly;
+	String message;
+	boolean canclimbwalls;
+	boolean canrun;
+	
+	public void speak() {
+	System.out.println(message);
+}
+}
